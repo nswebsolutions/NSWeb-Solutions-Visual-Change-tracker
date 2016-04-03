@@ -37,7 +37,7 @@ It have following objectives:
 Bash and PHP and working postfix/exim/whatever mail sender working on your server with mailx command
 
 ##Tested on
-PHP 5.6 with Debian 8
+PHP 5.6 / 7.0 with Debian 8
 
 ##Installation
 <code>mkdir /opt/nsw-vct/ && cd /opt/nsw-vct/ && wget https://raw.githubusercontent.com/nswebsolutions/NSWeb-Solutions-Visual-Change-tracker/master/alert.sh --no-check-certificate && wget https://raw.githubusercontent.com/nswebsolutions/NSWeb-Solutions-Visual-Change-tracker/master/gpl.txt --no-check-certificate && wget https://raw.githubusercontent.com/nswebsolutions/NSWeb-Solutions-Visual-Change-tracker/master/list.txt --no-check-certificate && wget https://raw.githubusercontent.com/nswebsolutions/NSWeb-Solutions-Visual-Change-tracker/master/webmon.php --no-check-certificate && chmod +x /opt/nsw-vct/webmon.php && chmod +x /opt/nsw-vct/alert.sh</code>
