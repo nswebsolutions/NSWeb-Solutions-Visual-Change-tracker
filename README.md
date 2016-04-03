@@ -26,18 +26,32 @@ along with NSWeb Solutions Visual Change tracker.  If not, see <http://www.gnu.o
 NSWeb Solutions Visual Change tracker collection of scripts to monitor web pages.
 It have following objectives:
 1) Detect whether listed webpage have any change in contents.
+
 2) If change is detected, calculate the difference, and output what have changed. 
+
 3) Detect both - positive and negative changes.
+
 4) Send an email alert if any change
 
 ##Dependencies
-Bash and PHP
+Bash and PHP and working postfix/exim/whatever mail sender working on your server with mailx command
 
 ##Tested on
 PHP 5.6 with Debian 8
 
 ##Installation
-In progress ....
+<code>mkdir /opt/nsw-vct/
+
+<code>wget https://raw.githubusercontent.com/nswebsolutions/NSWeb-Solutions-Visual-Change-tracker/master/alert.sh --no-check-certificate</code>
+
+<code>wget https://raw.githubusercontent.com/nswebsolutions/NSWeb-Solutions-Visual-Change-tracker/master/gpl.txt --no-check-certificate</code>
+
+<code>wget https://raw.githubusercontent.com/nswebsolutions/NSWeb-Solutions-Visual-Change-tracker/master/list.txt --no-check-certificate</code>
+
+<code>wget https://raw.githubusercontent.com/nswebsolutions/NSWeb-Solutions-Visual-Change-tracker/master/webmon.php --no-check-certificate</code>
+
+Change url to monitor in <code>/opt/nsw-vct/list.txt</code> and test with <code>/opt/nsw-vct/webmon.php && /opt/nsw-vct/alter.sh</code>
+
 
 ##Features planned
 Librenms integration
