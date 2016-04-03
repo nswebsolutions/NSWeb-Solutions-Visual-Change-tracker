@@ -24,7 +24,9 @@ along with NSWeb Solutions Visual Change tracker.  If not, see <http://www.gnu.o
 
 ##About NSWeb Solutions Visual Change tracker
 NSWeb Solutions Visual Change tracker collection of scripts to monitor web pages.
+
 It have following objectives:
+
 1) Detect whether listed webpage have any change in contents.
 
 2) If change is detected, calculate the difference, and output what have changed. 
@@ -40,15 +42,7 @@ Bash and PHP and working postfix/exim/whatever mail sender working on your serve
 PHP 5.6 with Debian 8
 
 ##Installation
-<code>mkdir /opt/nsw-vct/
-
-<code>wget https://raw.githubusercontent.com/nswebsolutions/NSWeb-Solutions-Visual-Change-tracker/master/alert.sh --no-check-certificate</code>
-
-<code>wget https://raw.githubusercontent.com/nswebsolutions/NSWeb-Solutions-Visual-Change-tracker/master/gpl.txt --no-check-certificate</code>
-
-<code>wget https://raw.githubusercontent.com/nswebsolutions/NSWeb-Solutions-Visual-Change-tracker/master/list.txt --no-check-certificate</code>
-
-<code>wget https://raw.githubusercontent.com/nswebsolutions/NSWeb-Solutions-Visual-Change-tracker/master/webmon.php --no-check-certificate</code>
+<code>mkdir /opt/nsw-vct/ && wget https://raw.githubusercontent.com/nswebsolutions/NSWeb-Solutions-Visual-Change-tracker/master/alert.sh --no-check-certificate && wget https://raw.githubusercontent.com/nswebsolutions/NSWeb-Solutions-Visual-Change-tracker/master/gpl.txt --no-check-certificate && wget https://raw.githubusercontent.com/nswebsolutions/NSWeb-Solutions-Visual-Change-tracker/master/list.txt --no-check-certificate && wget https://raw.githubusercontent.com/nswebsolutions/NSWeb-Solutions-Visual-Change-tracker/master/webmon.php --no-check-certificate && chmod +x /opt/nsw-vct/webmon.php && chmod +x /opt/nsw-vct/alert.sh
 
 Change url to monitor in <code>/opt/nsw-vct/list.txt</code> and test with <code>/opt/nsw-vct/webmon.php && /opt/nsw-vct/alter.sh</code>
 
