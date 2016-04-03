@@ -25,8 +25,8 @@ class Webmon {
 	const FILE_A_SUFFIX = '_a.txt';
 	const FILE_B_SUFFIX = '_b.txt';
 	const STATUS_NEW = 'New';
-	const STATUS_NO_CHANGE = 'No Change';
-	const STATUS_CHANGED = 'Changed';
+	const STATUS_NO_CHANGE = 'No Change ';
+	const STATUS_CHANGED = 'Changed ';
 	const CURL_REFERER = 'Webmon Script';
 
 	const NO_SEEDS_EXCEPTION = 'No seeds found in seed file.';
