@@ -44,9 +44,9 @@ PHP 5.6 with Debian 8
 
 Change url to monitor in <code>/opt/nsw-vct/list.txt</code> and test with <code>/opt/nsw-vct/webmon.php -i list.txt && /opt/nsw-vct/alert.sh</code>
 
-Add this in your crontab : <code>* * * * * /opt/nsw-vct/alert.sh > /dev/null 2>&1</code>
+Create a cronfile <code>nano /etc/cron.d/nsw-vct</code> and add this : <code>* * * * * root /opt/nsw-vct/alert.sh >> /dev/null 2>&1</code> Restart cron after : <code>service cron restart</code>
 
-For debug, add this in your crontab : <code>* * * * * /opt/nsw-vct/alert.sh > /var/log/nsw-vct.log </code>
+For debug, add this in your crontab : <code>* * * * * root /opt/nsw-vct/alert.sh > /var/log/nsw-vct.log </code>
 
 
 ##Features planned
