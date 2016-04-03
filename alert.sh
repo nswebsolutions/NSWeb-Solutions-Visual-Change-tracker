@@ -1,6 +1,8 @@
 #!/bin/bash
 File=/opt/nsw-vct/webmon.log
 
+cd /opt/nsw-vct/
+
 /opt/nsw-vct/webmon.php -i list.txt > /opt/nsw-vct/webmon.log
 if grep -q "Changed" "$File"
 then
