@@ -1,0 +1,15 @@
+#!/bin/bash
+URL="$1"
+File=/opt/nsw-vct/librenms-plugin/webmon.log
+cd /opt/nsw-vct/librenms-plugin/
+
+/opt/nsw-vct/librenms-plugin/webmon.php -u $URL > $File
+if grep -q "Changed" "$File"
+then
+        echo "Change Detected, checks your emails !"
+        exit 1
+else
+        echo "No change detected"
+        exit 0
+fi
+esac
