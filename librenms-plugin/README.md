@@ -30,10 +30,10 @@ It have following objectives:
 2) If change is detected, show an error in LibreNMS Services
 
 ##Dependencies
-Bash and PHP and working LibreNMS
+Bash and PHP and working LibreNMS with nagios-plugins package
 
 ##Tested on
 PHP 5.6 / 7.0 with Debian 8
 
 ##Installation
-<code>mkdir /opt/nsw-vct/librenms-plugin && cd /opt/nsw-vct/librenms-plugin && wget https://raw.githubusercontent.com/nswebsolutions/NSWeb-Solutions-Visual-Change-tracker/master/alert.sh --no-check-certificate && wget https://raw.githubusercontent.com/nswebsolutions/NSWeb-Solutions-Visual-Change-tracker/master/gpl.txt --no-check-certificate && wget https://raw.githubusercontent.com/nswebsolutions/NSWeb-Solutions-Visual-Change-tracker/master/list.txt --no-check-certificate && wget https://raw.githubusercontent.com/nswebsolutions/NSWeb-Solutions-Visual-Change-tracker/master/webmon.php --no-check-certificate && chmod +x /opt/nsw-vct/webmon.php && chmod +x /opt/nsw-vct/alert.sh</code>
+<code>mkdir /opt/nsw-vct/librenms-plugin && cd /opt/nsw-vct/librenms-plugin && wget https://raw.githubusercontent.com/nswebsolutions/NSWeb-Solutions-Visual-Change-tracker/master/librenms-plugin/check_nsw-vct --no-check-certificate && wget https://raw.githubusercontent.com/nswebsolutions/NSWeb-Solutions-Visual-Change-tracker/master/librenms-plugin/webmon.php --no-check-certificate && chmod +x /opt/nsw-vct/librenms-plugin/webmon.php && chmod +x /opt/nsw-vct/librenms-plugin/check_nsw-vct && mv check_nsw-vct /usr/lib/nagios/plugins/</code>
