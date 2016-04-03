@@ -1,8 +1,6 @@
 NSWeb Solutions Visual Change tracker
 =====================================
 
-[![Build Status](https://travis-ci.org/pmgupte/webmon.png?branch=master)](https://travis-ci.org/pmgupte/webmon)
-
 ##License
 NSWeb Solutions Visual Change tracker - program to monitor web pages for change and detect the change with email alerts
 Copyleft (C) NSWeb Solutions - 2016
